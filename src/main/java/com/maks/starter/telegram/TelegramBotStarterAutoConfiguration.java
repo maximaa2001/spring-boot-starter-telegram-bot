@@ -36,7 +36,7 @@ public class TelegramBotStarterAutoConfiguration {
 
     @Bean
     @ConditionalOnMissingBean
-    @ConditionalOnProperty(prefix = "bot", name = {"username", "token"})
+    @ConditionalOnProperty(prefix = "telegram.bot", name = {"username", "token"})
     public TelegramBot telegramBot(@Autowired CommandFactory commandFactory, @Autowired ParamsFactory paramsFactory) {
         return new DefaultTelegramLongPollingBot(botProperties.getUsername(), botProperties.getToken(),
                 commandFactory, paramsFactory);
