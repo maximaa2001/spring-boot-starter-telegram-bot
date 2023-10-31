@@ -1,1 +1,1 @@
-com.maks.starter.telegram.TelegramBotStarterAutoConfiguration
+com.maks.starter.telegram.LongPollingAutoConfiguration
