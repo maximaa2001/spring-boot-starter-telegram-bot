@@ -3,6 +3,8 @@ package com.maks.starter.telegram;
 import com.maks.telegram.bot.DefaultTelegramLongPollingBot;
 import com.maks.telegram.command.Command;
 import com.maks.telegram.command.factory.CommandFactory;
+import com.maks.telegram.command.factory.DefaultCommandFactory;
+import com.maks.telegram.command.factory.DefaultParamsFactory;
 import com.maks.telegram.command.factory.ParamsFactory;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,13 +31,13 @@ public class LongPollingAutoConfiguration {
     @Bean
     @ConditionalOnMissingBean
     public CommandFactory commandFactory(@Autowired List<Command> commandList) {
-        return new CommandFactory(commandList);
+        return new DefaultCommandFactory(commandList);
     }
 
     @Bean
     @ConditionalOnMissingBean
     public ParamsFactory paramsFactory() {
-        return new ParamsFactory();
+        return new DefaultParamsFactory();
     }
 
     @Bean
