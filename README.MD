@@ -23,7 +23,7 @@ Just add next dependency
 <dependency>
     <groupId>com.maks.starter</groupId>
     <artifactId>spring-boot-starter-telegram-bot</artifactId>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
 </dependency>
 ```
 
