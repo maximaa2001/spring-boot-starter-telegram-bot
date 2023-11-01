@@ -27,4 +27,4 @@ Just add next dependency
 </dependency>
 ```
 
-In the next step you should implement `com.maks.telegram.command.Command` and define their as spring beans
+In the next step you should implement `com.maks.telegram.command.Command` and define them as spring beans
