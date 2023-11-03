@@ -2,6 +2,10 @@
 
 This is a spring boot starter for [simple-telegram-bot-library](https://github.com/maximaa2001/simple-telegram-bot)
 
+## See also
+
+Example of telegram bot with use this starter — [Telegram Bot](https://github.com/maximaa2001/horoscopeTelegramBot)
+
 ## Webhooks vs Long Polling
 
 Support only long pulling method at now
@@ -27,4 +31,4 @@ Just add next dependency
 </dependency>
 ```
 
-In the next step you should implement `com.maks.telegram.command.Command` and define their as spring beans
+In the next step you should implement `com.maks.telegram.command.Command` and define them as spring beans
