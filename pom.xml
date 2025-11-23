@@ -30,7 +30,8 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring.boot.version>3.1.4</spring.boot.version>
-        <lombok.version>1.18.28</lombok.version>
+        <snakeyaml.version>2.2</snakeyaml.version>
+        <simple-telegram-bot.version>1.1.0</simple-telegram-bot.version>
     </properties>
 
     <dependencies>
@@ -48,13 +49,13 @@
         <dependency>
             <groupId>org.yaml</groupId>
             <artifactId>snakeyaml</artifactId>
-            <version>2.2</version>
+            <version>${snakeyaml.version}</version>
         </dependency>
 
         <dependency>
             <groupId>com.maks.telegram</groupId>
             <artifactId>simple-telegram-bot</artifactId>
-            <version>1.1.0</version>
+            <version>${simple-telegram-bot.version}</version>
         </dependency>
     </dependencies>
 
