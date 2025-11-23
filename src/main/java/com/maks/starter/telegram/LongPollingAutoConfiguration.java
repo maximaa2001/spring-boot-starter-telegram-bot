@@ -6,7 +6,6 @@ import com.maks.telegram.command.factory.CommandFactory;
 import com.maks.telegram.command.factory.DefaultCommandFactory;
 import com.maks.telegram.command.factory.DefaultParamsFactory;
 import com.maks.telegram.command.factory.ParamsFactory;
-import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
@@ -24,9 +23,12 @@ import java.util.List;
 
 @Configuration
 @EnableConfigurationProperties(BotProperties.class)
-@RequiredArgsConstructor
 public class LongPollingAutoConfiguration {
     private final BotProperties botProperties;
+
+    public LongPollingAutoConfiguration(BotProperties botProperties) {
+        this.botProperties = botProperties;
+    }
 
     @Bean
     @ConditionalOnMissingBean
